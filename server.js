@@ -193,7 +193,27 @@ app.get("/accept", async (req, res) => {
     await transporter.sendMail({
       to: booking.email,
       subject: "Reservation Confirmed",
-      text: `Your booking is confirmed for ${booking.date} at ${booking.time}`
+      html: `
+  <p>Dear ${booking.name},</p>
+
+  <p>We are delighted to confirm your reservation.</p>
+
+  <h3>Reservation Details:</h3>
+  <p><strong>Restaurant:</strong> ${restaurant.name}</p>
+  <p><strong>Address:</strong> ${restaurant.address}</p>
+  <p><strong>Date:</strong> ${booking.date}</p>
+  <p><strong>Time:</strong> ${booking.time}</p>
+  <p><strong>Guests:</strong> ${booking.guests}</p>
+
+  <br>
+
+  <p>We look forward to welcoming you and wish you a wonderful dining experience.</p>
+
+  <br>
+
+  <p>Best regards,<br>
+  Rim Thanonh Thai Food</p>
+`
     });
 
     res.send("✅ Booking Accepted");
@@ -224,7 +244,24 @@ app.get("/reject", async (req, res) => {
     await transporter.sendMail({
       to: booking.email,
       subject: "Reservation Update",
-      text: "Unfortunately your booking was rejected."
+      html: `
+  <p>Dear ${booking.name},</p>
+
+  <p>Thank you for your reservation request.</p>
+
+  <p>Unfortunately, we are unable to confirm your booking at the requested time.</p>
+
+  <p>We kindly ask you to try another date or time.</p>
+
+  <br>
+
+  <p>We apologize for the inconvenience and hope to welcome you soon.</p>
+
+  <br>
+
+  <p>Best regards,<br>
+  Rim Thanonh Thai Food</p>
+`
     });
 
     res.send("❌ Booking Rejected");
