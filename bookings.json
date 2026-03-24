@@ -1,0 +1,22 @@
+{
+  "ab7ba434d14e58768939cf317070047e4cb4a7ed89236cf08e96f6b69433864f": {
+    "name": "Bence Lieszkovszky",
+    "email": "bence.lieszkoy@gmail.com",
+    "guests": 14,
+    "restaurant": "2",
+    "date": "2026-03-26",
+    "time": "17:44",
+    "message": "นี่เป็นอีเมลทดสอบหรือการจอง โปรดอย่าสนใจ",
+    "status": "pending"
+  },
+  "a48c210ae57cd3147feb95f2af54c3c2e3eb38cf40c66443cac3c7b2e9c41502": {
+    "name": "Bence",
+    "email": "bence.lieszkoy@gmailcom",
+    "guests": 5,
+    "restaurant": "2",
+    "date": "2026-03-25",
+    "time": "17:49",
+    "message": "นี่เป็นอีเมลทดสอบ / สำหรับการจอง โปรดอย่าถือสา",
+    "status": "pending"
+  }
+}

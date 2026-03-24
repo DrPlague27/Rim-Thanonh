@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rim Thanonh Thai Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="rim.css">
+    <link rel="stylesheet" href="menu-anim.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+      <header id="navheader">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <!-- LOGO -->
+      <div class="col logo-col">
+        <a href="index.html#mainpage">
+          <img src="logo.png" class="img-fluid" id="logo">
+        </a>
+      </div>
+
+      <!-- NAV LINKS -->
+     <div class="col-auto nav-wrapper">
+
+  <!-- MENU ICON (tablet/mobile) -->
+  <button id="menuToggle" class="header-icon">
+    <i class="bi bi-list"></i>
+  </button>
+
+ <nav id="desktopNav" class="d-flex gap-3">
+<a href="index.html#mainpage" data-i18n="terms.nav.home"></a>
+<a href="menu.html" data-i18n="terms.nav.menu"></a>
+</nav>
+
+<div id="mobileNav" class="dropdown-panel">
+<a href="index.html#mainpage" data-i18n="terms.nav.home"></a>
+<a href="menu.html" data-i18n="terms.nav.menu"></a>
+</div>
+
+</div>
+      
+      <!-- SOCIAL ICONS -->
+      <div class="col-auto">
+        <div class="d-flex gap-4">
+          <a href="https://www.facebook.com/p/Rim-Thanonh-Thai-Food-100075905570746/?locale=hu_HU" target="_blank">
+            <i class="bi bi-facebook text-white fs-3"></i>
+          </a>
+
+          <a href="https://www.instagram.com/rimthanonhthaifood111/" target="_blank">
+          <i class="bi bi-instagram text-white fs-3"></i>
+          </a>
+
+          <a href="https://www.tiktok.com/@rim.thanonh.thai" target="_blank">
+            <i class="bi bi-tiktok text-white  fs-3"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-auto lang-wrapper">
+
+  <!-- LANGUAGE ICON -->
+  <button id="langToggle" class="header-icon">
+    <i class="bi bi-globe"></i>
+  </button>
+
+  <!-- DESKTOP LANG -->
+  <div id="desktopLang" class="d-flex gap-2 text-white">
+    <button class="languagebutton" data-lang="hu">HU</button>
+    <span>|</span>
+    <button class="languagebutton" data-lang="en">EN</button>
+    <span>|</span>
+    <button class="languagebutton" data-lang="th">TH</button>
+  </div>
+
+  <!-- DROPDOWN LANG -->
+  <div id="mobileLang" class="dropdown-panel">
+    <button class="languagebutton" data-lang="hu">HU</button>
+    <button class="languagebutton" data-lang="en">EN</button>
+    <button class="languagebutton" data-lang="th">TH</button>
+  </div>
+
+</div>
+      
+
+    </div>
+   </div>
+</header>
+
+<section class="terms-container">
+
+<div class="terms-brand">
+
+<img src="logo.png" alt="Rim Thanonh Thai Food Logo" class="terms-logo-img">
+
+<h1 class="terms-logo text-white">
+Rim Thanonh Thai Food
+</h1>
+
+<p class="terms-tagline text-white" data-i18n="terms.tagline"></p>
+
+<!-- TOP BUTTONS -->
+<div class="terms-buttons">
+
+<a href="index.html" class="terms-btn" data-i18n="terms.buttons.home"></a>
+
+<a href="menu.html" class="terms-btn" data-i18n="terms.buttons.menu"></a>
+
+</div>
+
+
+<!-- TERMS TEXT -->
+<div class="terms-content">
+
+<h1 class="text-white" data-i18n="terms.title"></h1>
+
+<p class="text-white terms-text" data-i18n="terms.text"></p>
+
+</div>
+
+
+<!-- BOTTOM BUTTONS -->
+<div class="terms-buttons">
+
+<a href="index.html" class="terms-btn" data-i18n="terms.buttons.home"></a>
+
+<a href="menu.html" class="terms-btn" data-i18n="terms.buttons.menu"></a>
+
+</div>
+
+</section>
+
+    <footer class="site-footer" id="contact">
+
+  <div class="footer-container">
+    
+
+    <div class="footer-column">
+     
+      <h4 data-i18n="footer.title"></h4>
+      <p data-i18n="footer.subtitle"></p>
+    </div>
+
+    <div class="footer-column">
+      <h4 data-i18n="footer.locations"></h4>
+      <ul>
+        <li>Rim Thanonh 1: Budapest, Dob u. 60, 1074</li>
+        <li>Rim Thanonh 2: Budapest, Akácfa u. 40, 1072</li>
+        <li>Rim Thanonh 4: Budapest, Klauzál u. 35, 1072</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4 data-i18n="footer.hours"></h4>
+      <ul>
+        <li><span data-i18n="restaurants.labels.days"></span></li>
+        <li>R1: 11:00 – 22:00</li>
+        <li>R2: 11:00 – 22:00</li>
+        <li>R4: 11:00 – 22:00</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+     <h4 data-i18n="footer.contact"></h4>
+      <ul>        
+        <li><strong data-i18n="restaurants.labels.phone"></strong><br> R1: 06 1 617 7147<br>R2: 06 70 614 6517<br>R4: 06 70 723 1899</li>
+        <li>Email: info@rimthanonh.hu</li>
+      </ul>
+    </div>
+
+  </div>
+
+<!-- FOOTER SOCIAL + LEGAL -->
+<div class="footer-extra">
+
+  <!-- Social Icons -->
+  <div class="footer-social">
+    <a href="https://www.facebook.com/p/Rim-Thanonh-Thai-Food-100075905570746/?locale=hu_HU" target="_blank">
+      <i class="bi bi-facebook"></i>
+    </a>
+
+    <a href="https://www.instagram.com/rimthanonhthaifood111/" target="_blank">
+      <i class="bi bi-instagram"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@rim.thanonh.thai" target="_blank">
+      <i class="bi bi-tiktok"></i>
+    </a>
+  </div>
+
+  <!-- Terms Link -->
+<div class="footer-legal">
+<a href="terms.html" data-i18n="footer.terms"></a>
+<span> | </span>
+<a href="privacy.html" data-i18n="legal.privacyPolicy"></a>
+</div>
+
+</div>
+
+  <div class="footer-bottom">
+    <p data-i18n="footer.copyright"></p>
+  </div>
+
+</footer>
+
+     <script src="rim.js">
+    </script>
+</body>
+</html>

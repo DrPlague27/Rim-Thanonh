@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="rim.css">
+    <title>Rim Thanonh Thai Food</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+<div id="main"></div>
+    <header id="navheader">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <!-- LOGO -->
+      <div class="col logo-col">
+        <a href="#mainpage">
+          <img src="logo.png" class="img-fluid" id="logo">
+        </a>
+      </div>
+
+      <!-- NAV LINKS -->
+     <div class="col-auto nav-wrapper">
+
+  <!-- MENU ICON (tablet/mobile) -->
+  <button id="menuToggle" class="header-icon">
+    <i class="bi bi-list"></i>
+  </button>
+
+  <!-- DESKTOP NAV -->
+  <nav id="desktopNav" class="d-flex gap-3">
+    <a href="#mainpage" data-i18n="nav.home"></a>
+    <a href="#aboutus" data-i18n="nav.about"></a>
+    <a href="#reviews" data-i18n="nav.reviews"></a>
+    <a href="menu.html" data-i18n="nav.menu"></a>
+    <a href="#restaurants" data-i18n="nav.restaurants"></a>
+    <a href="#booking" data-i18n="nav.booking"></a>
+    <a href="#takeaway" data-i18n="nav.takeaway"></a>
+    <a href="#contact" data-i18n="nav.contact"></a>
+  </nav>
+
+  <!-- DROPDOWN NAV -->
+  <div id="mobileNav" class="dropdown-panel">
+    <a href="#mainpage" data-i18n="nav.home"></a>
+    <a href="#aboutus" data-i18n="nav.about"></a>
+    <a href="#reviews" data-i18n="nav.reviews"></a>
+    <a href="menu.html" data-i18n="nav.menu"></a>
+    <a href="#restaurants" data-i18n="nav.restaurants"></a>
+    <a href="#booking" data-i18n="nav.booking"></a>
+    <a href="#takeaway" data-i18n="nav.takeaway"></a>
+    <a href="#contact" data-i18n="nav.contact"></a>
+  </div>
+
+</div>
+      
+      <!-- SOCIAL ICONS -->
+      <div class="col-auto">
+        <div class="d-flex gap-4">
+          <a href="https://www.facebook.com/p/Rim-Thanonh-Thai-Food-100075905570746/?locale=hu_HU" target="_blank">
+            <i class="bi bi-facebook text-white fs-3"></i>
+          </a>
+
+          <a href="https://www.instagram.com/rimthanonhthaifood111/" target="_blank">
+          <i class="bi bi-instagram text-white fs-3"></i>
+          </a>
+
+          <a href="https://www.tiktok.com/@rim.thanonh.thai" target="_blank">
+            <i class="bi bi-tiktok text-white  fs-3"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-auto lang-wrapper">
+
+  <!-- LANGUAGE ICON -->
+  <button id="langToggle" class="header-icon">
+    <i class="bi bi-globe"></i>
+  </button>
+
+  <!-- DESKTOP LANG -->
+  <div id="desktopLang" class="d-flex gap-2 text-white">
+    <button class="languagebutton" data-lang="hu">HU</button>
+    <span>|</span>
+    <button class="languagebutton" data-lang="en">EN</button>
+    <span>|</span>
+    <button class="languagebutton" data-lang="th">TH</button>
+  </div>
+
+  <!-- DROPDOWN LANG -->
+  <div id="mobileLang" class="dropdown-panel">
+    <button class="languagebutton" data-lang="hu">HU</button>
+    <button class="languagebutton" data-lang="en">EN</button>
+    <button class="languagebutton" data-lang="th">TH</button>
+  </div>
+
+</div>
+      
+
+    </div>
+   </div>
+</header>
+
+<section id="mainpage">
+    <div class="hero-content text-center text-white">
+
+        <!-- CENTER CONTENT -->
+        <div class="hero-center">
+
+            <img src="logo.png" id="hero-logo" alt="Rim Thanonh Thai Food">
+
+            <h1 class="hero-title" data-i18n="hero.title"></h1>
+<p class="hero-subtitle" data-i18n="hero.subtitle"></p>
+
+
+        </div>
+
+        <!-- BOTTOM AREA -->
+        <div class="hero-bottom">
+
+            <div class="hero-buttons">
+                <a href="menu.html" class="hero-btn" data-i18n="hero.menu"></a>
+                <a href="#booking" class="hero-btn" data-i18n="hero.reserve"></a>
+                <a href="#takeaway" class="hero-btn" data-i18n="hero.takeaway"></a>
+            </div>
+
+            <!-- LANGUAGE SELECTOR -->
+         <div class="hero-language">
+  <button class="languagebutton" data-lang="hu">HU</button>
+  <span>|</span>
+  <button class="languagebutton" data-lang="en">EN</button>
+  <span>|</span>
+  <button class="languagebutton" data-lang="th">TH</button>
+</div>
+        </div>
+
+    </div>
+</section>
+
+<section id="aboutus">
+
+    <!-- LEFT COLUMN -->
+    <div class="about-left">
+        <div class="about-content">
+
+            <h2 data-i18n="about.title"></h2>
+
+            <p data-i18n="about.text1"></p>
+            <p data-i18n="about.text2"></p>
+
+        </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="about-right">
+      
+    </div>
+
+</section>
+
+
+<section id="reviews">
+
+  <div class="reviews-container">
+    <h1 class="color-white" data-i18n="reviews.title"></h1>
+    <h2 class="reviews-title">★★★★★</h2>
+   
+    <!-- Elfsight Google Reviews | Rim Thanonh 1 Review widget -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-f50e940c-4ce5-4265-aaab-2f1ee6df915e" data-elfsight-app-lazy></div>
+<!-- Elfsight Google Reviews | Rim Thanonh 2 Google Review Widget -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-45942af6-14ad-4a20-8591-3ccb00ff3bbe" data-elfsight-app-lazy></div>
+
+</section>
+
+<section id="menusection">
+
+    <!-- LEFT IMAGE -->
+    <div class="menu-left"></div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="menu-right">
+
+        <div class="menu-content text-center">
+
+            <h1 class="menu-intro" data-i18n="menu.intro"></h1>
+
+            <a href="menu.html" class="menu-icon-link">
+
+                <i class="bi bi-fast-forward icon-outline"></i>
+                <i class="bi bi-fast-forward-fill icon-filled"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+ <section id="restaurants">
+
+    <h2 class="restaurants-title" data-i18n="restaurants.title"></h2>
+
+<div class="restaurant-notice text-white">
+
+<p>
+<strong data-i18n="restaurants.restaurantNotice.title"></strong> 
+<span data-i18n="restaurants.restaurantNotice.text">
+
+</span>
+</p>
+
+</div>
+    
+    <div class="restaurants-container">
+
+        
+        <div class="restaurant-card card-left">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d168.46280272269382!2d19.066496765420624!3d47.501506465012305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd0625805743%3A0x9029c3b2541bcdaa!2sRim%20Thanonh%20Thai%20Food!5e0!3m2!1shu!2shu!4v1771965820507!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="restaurant-info">
+              <h2 class="text-center">Rim Thanonh 1</h2>
+                <p><i class="bi bi-clock-fill"></i> <strong data-i18n="restaurants.labels.opening"></strong></strong><br>
+                <span data-i18n="restaurants.labels.days"></span> 11:00 – 22:00</p>
+
+                <p><i class="bi bi-geo-alt-fill"></i> <strong data-i18n="restaurants.labels.address"></strong><br>
+                Budapest, Dob u. 60, 1074</p>
+
+                <p><i class="bi bi-telephone-fill"></i> <strong data-i18n="restaurants.labels.phone"></strong><br>
+                06 1 617 7147</p>
+            </div>
+
+        </div>
+
+       
+        <div class="restaurant-card card-middle">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.482356813537!2d19.065656699999998!3d47.4999967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd5a6ec6e32b%3A0xb89df9761e6a3f8d!2sRim%20Thanonh%202%20Thai%20Food!5e0!3m2!1shu!2shu!4v1771965894752!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="restaurant-info">
+              <h2 class="text-center">Rim Thanonh 2</h2>
+                <p><i class="bi bi-clock-fill"></i> <strong data-i18n="restaurants.labels.opening"></strong><br><span data-i18n="restaurants.labels.days"></span> 11:00 – 22:00</p>
+                <p><i class="bi bi-geo-alt-fill"></i> <strong data-i18n="restaurants.labels.address"></strong><br>Budapest, Akácfa u. 40, 1072</p>
+                <p><i class="bi bi-telephone-fill"></i> <strong data-i18n="restaurants.labels.phone"></strong><br>06 70 614 6517</p>
+            </div>
+        </div>
+
+        
+        <div class="restaurant-card card-right">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.2527073691094!2d19.065072086929405!3d47.499230763133696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd007bb6acbb%3A0x2091688a9bbdd773!2sRim%20Thanonh%204%20Thai%20Tea%20%26%20Snacks!5e0!3m2!1shu!2shu!4v1772711656741!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="restaurant-info">
+              <h2 class="text-center">Rim Thanonh<br>Thai Tea & Snacks</h2>
+                <p><i class="bi bi-clock-fill"></i> <strong data-i18n="restaurants.labels.opening"></strong><br><span data-i18n="restaurants.labels.days"></span> 11:00 – 22:00</p>
+                <p><i class="bi bi-geo-alt-fill"></i> <strong data-i18n="restaurants.labels.address"></strong><br>Budapest, Klauzál u. 35, 1072</p>
+                <p><i class="bi bi-telephone-fill"></i> <strong data-i18n="restaurants.labels.phone"></strong><br>06 70 723 1899</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="booking">
+
+
+    <div class="booking-left"></div>
+
+   
+    <div class="booking-right">
+
+       <form id="bookingForm">
+        <input type="text" name="website" class="honeypot">
+
+   <h2 data-i18n="booking.title" class="text-white"></h2>
+
+<input
+type="text"
+name="name"
+data-i18n-placeholder="booking.name"
+required
+>
+
+<input
+  type="tel"
+  name="phone"
+  data-i18n-placeholder="booking.phone"
+  placeholder="Phone Number"
+  pattern="[0-9+ ]{6,20}"
+  required
+>
+
+<input
+type="email"
+name="email"
+data-i18n-placeholder="booking.email"
+required
+>
+
+<select name="restaurant" id="restaurantSelect" required>
+<option value="" data-i18n="booking.chooseRestaurant">
+Choose Restaurant
+</option>
+<!--<option value="1">Rim Thanonh 1</option>-->
+<option value="2">Rim Thanonh 2</option>
+<!--<option value="3">Rim Thanonh Soups & Snacks</option>-->
+</select>
+
+<input
+type="number"
+id="guestInput"
+name="guests"
+data-i18n-placeholder="guests"
+required
+>
+
+<div class="input-icon">
+  <input type="date" id="bookingDate" data-i18n-placeholder="booking.date" name="date" required>
+  <span class="input-icon-btn">
+    <i class="bi bi-calendar"></i>
+  </span>
+</div>
+
+<div class="input-icon">
+  <input type="time" id="bookingTime" data-i18n-placeholder="booking.time" name="time" required>
+  <span class="input-icon-btn">
+    <i class="bi bi-clock"></i>
+  </span>
+</div>
+
+<textarea
+name="message"
+data-i18n-placeholder="booking.message"
+></textarea>
+
+<div class="privacy-consent text-white">
+<label>
+<input type="checkbox" name="privacy" required>
+<span data-i18n="legal.privacyConsent"></span>
+</label>
+</div>
+
+<button type="submit" data-i18n="booking.submit">
+</button>
+</form>
+
+    </div>
+
+</section>
+
+<section id="takeaway">
+
+    <!-- WOLT -->
+    <div class="takeaway-half wolt">
+
+        <div class="takeaway-content">
+
+          <img src="woltlogo.png" alt="Wolt" class="takeaway-logo">
+            <p data-i18n="takeaway.woltText"></p>
+
+            <a href="https://wolt.com/hu/hun/budapest/restaurant/rim-thanonh-thai-food" class="takeaway-btn" target="_blank">
+                Rim Thanonh 1
+            </a>
+            <a href="https://wolt.com/hu/hun/budapest/restaurant/rim-thanonh-thai-food-2" class="takeaway-btn" target="_blank">
+                Rim Thanonh 2
+            </a>
+        </div>
+
+    </div>
+
+    <!-- FOODORA -->
+    <div class="takeaway-half foodora">
+
+        <div class="takeaway-content">
+
+          <img src="foodoralogo.png" alt="Foodora" class="takeaway-logo">
+            
+<p data-i18n="takeaway.foodoraText"></p>
+
+            <a href="https://www.foodora.hu/restaurant/iksw/rim-thanonh-thai-food-1" class="takeaway-btn" target="_blank">
+Rim Thanonh 1
+</a>
+<a href="https://www.foodora.hu/restaurant/qpj7/rim-thanonh-thai-food-2" class="takeaway-btn" target="_blank">Rim Thanonh 2</a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+    <footer class="site-footer" id="contact">
+
+  <div class="footer-container">
+    
+
+    <div class="footer-column">
+     
+      <h4 data-i18n="footer.title"></h4>
+      <p data-i18n="footer.subtitle"></p>
+    </div>
+
+    <div class="footer-column">
+      <h4 data-i18n="footer.locations"></h4>
+      <ul>
+        <li>Rim Thanonh 1: Budapest, Dob u. 60, 1074</li>
+        <li>Rim Thanonh 2: Budapest, Akácfa u. 40, 1072</li>
+        <li>Rim Thanonh 4: Budapest, Klauzál u. 35, 1072</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4 data-i18n="footer.hours"></h4>
+      <ul>
+        <li><span data-i18n="restaurants.labels.days"></span></li>
+        <li>R1: 11:00 – 22:00</li>
+        <li>R2: 11:00 – 22:00</li>
+        <li>R4: 11:00 – 22:00</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+     <h4 data-i18n="footer.contact"></h4>
+      <ul>        
+        <li><strong data-i18n="restaurants.labels.phone"></strong><br> R1: 06 1 617 7147<br>R2: 06 70 614 6517<br>R4: 06 70 723 1899</li>
+        <li>Email: info@rimthanonh.hu</li>
+      </ul>
+    </div>
+
+  </div>
+
+<!-- FOOTER SOCIAL + LEGAL -->
+<div class="footer-extra">
+
+  <!-- Social Icons -->
+  <div class="footer-social">
+    <a href="https://www.facebook.com/p/Rim-Thanonh-Thai-Food-100075905570746/?locale=hu_HU" target="_blank">
+      <i class="bi bi-facebook"></i>
+    </a>
+
+    <a href="https://www.instagram.com/rimthanonhthaifood111/" target="_blank">
+      <i class="bi bi-instagram"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@rim.thanonh.thai" target="_blank">
+      <i class="bi bi-tiktok"></i>
+    </a>
+  </div>
+
+  <!-- Terms Link -->
+<div class="footer-legal">
+<a href="terms.html" data-i18n="footer.terms"></a>
+<span> | </span>
+<a href="privacy.html" data-i18n="legal.privacyPolicy"></a>
+</div>
+
+</div>
+
+  <div class="footer-bottom">
+    <p data-i18n="footer.copyright"></p>
+  </div>
+
+</footer>
+
+    <script src="rim.js">
+    </script>
+</body>
+</html>

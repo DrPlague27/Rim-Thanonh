@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rim Thanonh Thai Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="rim.css">
+    <link rel="stylesheet" href="menu-anim.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+    
+ <!-- ================= HEADER ================= -->
+<header id="navheader">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+
+      <!-- LOGO -->
+      <div class="col logo-col">
+        <a href="index.html#mainpage">
+          <img src="logo.png" class="img-fluid" id="logo" alt="Rim Thanonh Logo">
+        </a>
+      </div>
+
+      <!-- NAV LINKS -->
+      <div class="col-auto nav-wrapper">
+
+        <!-- MOBILE MENU ICON -->
+        <button id="menuToggle" class="header-icon">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <!-- DESKTOP NAV -->
+        <nav id="desktopNav" class="d-flex gap-3">
+          <a href="#soups" data-i18n="menu.nav.soups"></a>
+          <a href="#appetizers" data-i18n="menu.nav.appetizers"></a>
+          <a href="#noodles" data-i18n="menu.nav.noodles"></a>
+          <a href="#rice" data-i18n="menu.nav.rice"></a>
+          <a href="#curries" data-i18n="menu.nav.curries"></a>
+          <a href="#specialities" data-i18n="menu.nav.specialities"></a>
+          <a href="#fish" data-i18n="menu.nav.fish"></a>
+          <a href="#sides" data-i18n="menu.nav.sides"></a>
+          <a href="#desserts" data-i18n="menu.nav.desserts"></a>
+          <a href="#drinks" data-i18n="menu.nav.drinks"></a>
+          <a href="index.html#menusection" class="nav-return">
+  ← <span data-i18n="menu.nav.back"></span>
+</a>
+        </nav>
+
+        <!-- MOBILE NAV DROPDOWN -->
+        <div id="mobileNav" class="dropdown-panel">
+          <a href="#soups" data-i18n="menu.nav.soups"></a>
+          <a href="#appetizers" data-i18n="menu.nav.appetizers"></a>
+          <a href="#noodles" data-i18n="menu.nav.noodles"></a>
+          <a href="#rice" data-i18n="menu.nav.rice"></a>
+          <a href="#curries" data-i18n="menu.nav.curries"></a>
+          <a href="#specialities" data-i18n="menu.nav.specialities"></a>
+          <a href="#fish" data-i18n="menu.nav.fish"></a>
+          <a href="#sides" data-i18n="menu.nav.sides"></a>
+          <a href="#desserts" data-i18n="menu.nav.desserts"></a>
+          <a href="#drinks" data-i18n="menu.nav.drinks"></a>
+          <a href="index.html#menusection" class="nav-return">
+           ← <span data-i18n="menu.nav.back"></span>
+          </a>
+        </div>
+
+      </div>
+
+       <!-- SOCIAL ICONS -->
+      <div class="col-auto">
+        <div class="d-flex gap-4">
+          <a href="https://www.facebook.com/p/Rim-Thanonh-Thai-Food-100075905570746/?locale=hu_HU" target="_blank">
+            <i class="bi bi-facebook text-white fs-3"></i>
+          </a>
+
+          <a href="https://www.instagram.com/rimthanonhthaifood111/" target="_blank">
+          <i class="bi bi-instagram text-white fs-3"></i>
+          </a>
+
+          <a href="https://www.tiktok.com/@rim.thanonh.thai" target="_blank">
+            <i class="bi bi-tiktok text-white  fs-3"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- LANGUAGE SELECTOR -->
+      <div class="col-auto lang-wrapper">
+
+        <button id="langToggle" class="header-icon">
+          <i class="bi bi-globe"></i>
+        </button>
+
+        <!-- DESKTOP LANG -->
+        <div id="desktopLang" class="d-flex gap-2 text-white">
+          <button class="languagebutton" data-lang="hu">HU</button>
+          <span>|</span>
+          <button class="languagebutton" data-lang="en">EN</button>
+          <span>|</span>
+          <button class="languagebutton" data-lang="th">TH</button>
+        </div>
+
+        <!-- MOBILE LANG -->
+        <div id="mobileLang" class="dropdown-panel">
+          <button class="languagebutton" data-lang="hu">HU</button>
+          <button class="languagebutton" data-lang="en">EN</button>
+          <button class="languagebutton" data-lang="th">TH</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section id="menu-hero">
+  <div class="menu-right menu-hero-text">
+    <div class="menu-content text-center">
+
+      <img src="logo.png" alt="Rim Thanonh Logo" class="menu-hero-logo">
+
+      <h1 class="menu-intro" data-i18n="menu.backIntro"></h1>
+
+      <a href="index.html#menusection" class="menu-icon-link">
+        <i class="bi bi-arrow-left icon-outline"></i>
+        <i class="bi bi-arrow-left icon-filled"></i>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="menu-left menu-hero-image"></div>
+</section>
+
+<section class="menu-legend">
+
+  <div class="menu-legend-container">
+
+    <p>
+      <strong data-i18n="menu.legend.spiceTitle"></strong>
+      🌶️ <span data-i18n="menu.legend.mild"></span> &nbsp;
+      🌶️🌶️ <span data-i18n="menu.legend.medium"></span> &nbsp;
+      🌶️🌶️🌶️ <span data-i18n="menu.legend.verySpicy"></span>
+    </p>
+
+    <p data-i18n="menu.legend.vegetarian"></p>
+
+    <p data-i18n="menu.legend.chefNote"></p>
+
+    <p data-i18n="menu.legend.serviceNote"></p>
+  </div>
+
+</section>
+
+
+<section class="menu-category" id="soups">
+  <div class="menu-category-title">
+    <h2 data-i18n="menu.soups.title"></h2>
+  </div>
+
+  <div class="menu-featured-container">
+
+    <!-- A1 Tom Yum -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="tomyum.jfif" alt="Tom Yum Soup">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.soups.tomYum.name"></h3>
+        <p><strong data-i18n="menu.soups.tomYum.thai"></strong></p>
+
+        <p class="menu-tags">
+          <span class="spice level-3">🌶️🌶️🌶️</span>
+          <span class="veg" data-i18n="menu.veg"></span>
+        </p>
+
+        <p data-i18n="menu.soups.tomYum.desc"></p>
+
+        <div class="menu-prices">
+  <div class="price-row">
+    <span data-i18n="menu.soups.tomYum.price1"></span>
+    <span class="price">3000 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.tomYum.price2"></span>
+    <span class="price">3500 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.tomYum.price3"></span>
+    <span class="price">4200 <span data-i18n="currency"></span></span>
+  </div>
+</div>
+      </div>
+
+    </div>
+
+
+    <!-- A2 Tom Kha -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="tomka.jfif" alt="Tom Kha Soup">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.soups.tomKha.name"></h3>
+        <p><strong data-i18n="menu.soups.tomKha.thai"></strong></p>
+
+        <span class="veg" data-i18n="menu.veg"></span>
+
+        <p data-i18n="menu.soups.tomKha.desc"></p>
+
+        <div class="menu-prices">
+  <div class="price-row">
+    <span data-i18n="menu.soups.tomKha.price1"></span>
+    <span class="price">3000 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.tomKha.price2"></span>
+    <span class="price">3500 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.tomKha.price3"></span>
+    <span class="price">4200 <span data-i18n="currency"></span></span>
+  </div>
+</div>
+      </div>
+
+    </div>
+
+
+    <!-- A3 Kuaitiao -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="kuetiao.jfif" alt="Kuaitiao Soup">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.soups.kuaitiao.name"></h3>
+        <p><strong data-i18n="menu.soups.kuaitiao.thai"></strong></p>
+
+        <span class="veg" data-i18n="menu.veg"></span>
+
+        <p data-i18n="menu.soups.kuaitiao.desc"></p>
+<div class="menu-prices">
+  <div class="price-row">
+    <span data-i18n="menu.soups.kuaitiao.price1"></span>
+    <span class="price">4000 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.kuaitiao.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+</div>
+      </div>
+
+    </div>
+
+
+    <!-- A4 Sukee -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="sukee.jfif" alt="Sukee Soup">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.soups.sukee.name"></h3>
+        <p><strong data-i18n="menu.soups.sukee.thai"></strong></p>
+
+        <p class="menu-tags">
+          <span class="spice level-2">🌶️🌶️</span>
+          <span class="veg" data-i18n="menu.veg"></span>
+        </p>
+
+        <p data-i18n="menu.soups.sukee.desc"></p>
+
+       <div class="menu-prices">
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4000 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price3"></span>
+    <span class="price">5000 <span data-i18n="currency"></span></span>
+  </div>
+</div>
+      </div>
+
+    </div>
+
+
+    <!-- A5 Kuaitiao Tom Yum -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="kuetiaotomyum.jfif" alt="Kuetiao Tom Yum">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.soups.kuaitiaoTomYum.name"></h3>
+
+        <p class="menu-tags">
+          <span class="spice level-3">🌶️🌶️🌶️</span>
+          <span class="veg" data-i18n="menu.veg"></span>
+        </p>
+
+        <p data-i18n="menu.soups.kuaitiaoTomYum.desc"></p>
+
+        <div class="menu-prices">
+  <div class="price-row">
+    <span data-i18n="menu.soups.kuaitiaoTomYum.price1"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.kuaitiaoTomYum.price2"></span>
+    <span class="price">5000 <span data-i18n="currency"></span></span>
+  </div>
+</div>
+      </div>
+
+    </div>
+
+    
+
+    <!-- A6 Radnaa -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="radna.jfif" alt="Radnaa">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.soups.radnaa.name"></h3>
+        <p><strong data-i18n="menu.soups.radnaa.thai"></strong></p>
+
+        <span class="veg" data-i18n="menu.veg"></span>
+
+        <p data-i18n="menu.soups.radnaa.desc"></p>
+
+        <div class="menu-prices">
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4000 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+   <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price3"></span>
+    <span class="price">5000 <span data-i18n="currency"></span></span>
+  </div>
+</div>
+      </div>
+
+    </div>
+
+
+    <!-- A7 Khao Tom Jok -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="khaotomyok.jfif" alt="Khaotomyok">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.soups.jok.name"></h3>
+        <p><strong data-i18n="menu.soups.jok.thai"></strong></p>
+
+        <span class="veg" data-i18n="menu.veg"></span>
+
+        <p data-i18n="menu.soups.jok.desc"></p>
+
+        <div class="menu-prices">
+  <div class="price-row">
+    <span class="price">4000 <span data-i18n="currency"></span></span>
+  </div>
+</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="menu-category" id="appetizers">
+  <div class="menu-category-title">
+    <h2 data-i18n="menu.appetizers.title"></h2>
+  </div>
+
+  <div class="menu-featured-container">
+
+    <!-- F1 Pik Kai Thod -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="pikkaithod.jfif" alt="Thai Fried Chicken Wings">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.appetizers.pikKaiThod.name"></h3>
+        <p><strong data-i18n="menu.appetizers.pikKaiThod.thai"></strong></p>
+
+        <p class="menu-tags">
+          <span class="spice level-1">🌶️</span>
+        </p>
+
+        <p data-i18n="menu.appetizers.pikKaiThod.desc"></p>
+
+         <div class="price-row">
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+      </div>
+
+    </div>
+
+
+    <!-- F2 Shrimp Tempura -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="tempura.jfif" alt="Shrimp Tempura">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.appetizers.shrimpTempura.name"></h3>
+        <p><strong data-i18n="menu.appetizers.shrimpTempura.thai"></strong></p>
+
+        <p data-i18n="menu.appetizers.shrimpTempura.desc"></p>
+
+        <div class="price-row">
+    <span class="price">3000 <span data-i18n="currency"></span></span>
+  </div>
+      </div>
+
+    </div>
+
+
+    <!-- F3 Luk Chin -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="meatballskewered.jfif" alt="Thai Meatballs">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.appetizers.lukChin.name"></h3>
+        <p><strong data-i18n="menu.appetizers.lukChin.thai"></strong></p>
+
+        <p data-i18n="menu.appetizers.lukChin.desc"></p>
+
+         <div class="price-row">
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+      </div>
+
+    </div>
+
+
+    <!-- F4 Spring Rolls -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="springrolls.jfif" alt="Spring Rolls">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.appetizers.springRolls.name"></h3>
+        <p><strong data-i18n="menu.appetizers.springRolls.thai"></strong></p>
+
+        <p data-i18n="menu.appetizers.springRolls.desc"></p>
+
+         <div class="price-row">
+    <span class="price">3000 <span data-i18n="currency"></span></span>
+  </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="menu-category" id="noodles">
+
+  <div class="menu-category-title">
+    <h2 data-i18n="menu.noodles.title"></h2>
+  </div>
+
+  <div class="menu-featured-container">
+
+    <!-- B1 Pad Thai -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="padthai.jfif" alt="Pad Thai">
+      </div>
+      
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.noodles.padThai.name"></h3>
+        <p><strong data-i18n="menu.noodles.padThai.thai"></strong></p>
+
+        <span class="spice level-3">🌶️</span>
+          <span class="veg" data-i18n="menu.veg"></span>
+
+        <p data-i18n="menu.noodles.padThai.desc"></p>
+
+         <div class="menu-prices">
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4000 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+   <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price3"></span>
+    <span class="price">5000 <span data-i18n="currency"></span></span>
+  </div>
+</div>
+
+      </div>
+
+    </div>
+
+
+    <!-- B2 Pad Mee Luang -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="padmeeluang.jfif" alt="Pad Mee Luang">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.noodles.padMeeLuang.name"></h3>
+
+        <span class="veg" data-i18n="menu.veg"></span>
+
+        <p data-i18n="menu.noodles.padMeeLuang.desc"></p>
+
+        <div class="menu-prices">
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4000 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+   <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price3"></span>
+    <span class="price">5000 <span data-i18n="currency"></span></span>
+  </div>
+</div>
+      </div>
+
+    </div>
+
+
+    <!-- B3 Pad Wunsen -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="padwunsen.jfif" alt="Pad Wunsen" class="">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.noodles.padWunsen.name"></h3>
+
+        <span class="veg" data-i18n="menu.veg"></span>
+
+        <p data-i18n="menu.noodles.padWunsen.desc"></p>
+
+        <div class="menu-prices">
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4000 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+   <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price3"></span>
+    <span class="price">5000 <span data-i18n="currency"></span></span>
+  </div>
+</div>
+      </div>
+
+    </div>
+
+
+    <!-- B4 Pad Si Iyu -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="padsiyu.jfif" alt="Pad Si Iyu">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.noodles.padSiIyu.name"></h3>
+
+        <span class="veg" data-i18n="menu.veg"></span>
+
+        <p data-i18n="menu.noodles.padSiIyu.desc"></p>
+
+        <div class="menu-prices">
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4000 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+   <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price3"></span>
+    <span class="price">5000 <span data-i18n="currency"></span></span>
+  </div>
+</div>
+      </div>
+
+    </div>
+
+
+    <!-- B5 Pad Kee Mao -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="padkeemao.jfif" alt="Pad Kee Mao">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.noodles.padKeeMao.name"></h3>
+
+        <p class="menu-tags">
+          <span class="spice level-3">🌶️🌶️🌶️</span>
+          <span class="veg" data-i18n="menu.veg"></span>
+        </p>
+
+        <p data-i18n="menu.noodles.padKeeMao.desc"></p>
+
+        <div class="menu-prices">
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4000 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+   <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price3"></span>
+    <span class="price">5000 <span data-i18n="currency"></span></span>
+  </div>
+</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="menu-category" id="rice">
+
+  <div class="menu-category-title">
+    <h2 data-i18n="menu.rice.title"></h2>
+  </div>
+
+  <div class="menu-featured-container">
+
+    <!-- C1 Khao Pad -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="khaopad.jfif" alt="Khao Pad">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.rice.khaoPad.name"></h3>
+        <p><strong data-i18n="menu.rice.khaoPad.thai"></strong></p>
+
+        <span class="veg" data-i18n="menu.veg"></span>
+
+        <p data-i18n="menu.rice.khaoPad.desc"></p>
+
+       <div class="menu-prices">
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4000 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+   <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price3"></span>
+    <span class="price">5000 <span data-i18n="currency"></span></span>
+  </div>
+</div>
+      
+      </div>
+
+    </div>
+
+
+    <!-- C2 Pad Khing -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="padkhing.jfif" alt="Pad Khing">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.rice.padKhing.name"></h3>
+
+        <span class="veg" data-i18n="menu.veg"></span>
+
+        <p data-i18n="menu.rice.padKhing.desc"></p>
+
+        <div class="menu-prices">
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4000 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+   <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price3"></span>
+    <span class="price">5000 <span data-i18n="currency"></span></span>
+  </div>
+</div>
+      </div>
+
+    </div>
+
+
+    <!-- C3 Pad Med Mamuang -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="padmedmamuang.jfif" alt="Pad Med Mamuang">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.rice.padMedMamuang.name"></h3>
+
+        <span class="veg" data-i18n="menu.veg"></span>
+
+        <p data-i18n="menu.rice.padMedMamuang.desc"></p>
+
+          <div class="menu-prices">
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4000 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+   <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price3"></span>
+    <span class="price">5000 <span data-i18n="currency"></span></span>
+  </div>
+</div>
+
+      </div>
+
+    </div>
+
+
+    <!-- C4 Pad Kaprao -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="padkaprao.jfif" alt="Pad Kaprao">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.rice.padKaprao.name"></h3>
+
+        <p class="menu-tags">
+          <span class="spice level-3">🌶️🌶️🌶️</span>
+          <span class="veg" data-i18n="menu.veg"></span>
+        </p>
+
+        <p data-i18n="menu.rice.padKaprao.desc"></p>
+
+        <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4000 <span data-i18n="currency"></span></span>
+    
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+   <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price3"></span>
+    <span class="price">5000 <span data-i18n="currency"></span></span>
+  </div>
+  <div class="price-row">
+    <span data-i18n="menu.rice.padKaprao.egg"></span>
+    <span class="price">+700 <span data-i18n="currency"></span></span>
+  </div>
+</div>
+  
+
+    </div>
+
+
+    <!-- C5 Pad Kaprao Minced Pork -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="padminced.jfif" alt="Pad Kaprao Minced Pork">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.rice.padKapraoMince.name"></h3>
+
+        <p class="menu-tags">
+          <span class="spice level-3">🌶️🌶️🌶️</span>
+          <span class="veg" data-i18n="menu.veg"></span>
+        </p>
+
+        <p data-i18n="menu.rice.padKapraoMince.desc"></p>
+
+        <div class="price-row">
+    <span class="price">4000 <span data-i18n="currency"></span></span>
+  </div>
+      
+<div class="price-row">
+    <span data-i18n="menu.rice.padKaprao.egg"></span>
+    <span class="price">+700 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- C6 Pad Kaprao Crispy Pork -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="kapraocrispy.jfif" alt="Pad Kaprao Crispy Pork">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.rice.padKapraoCrispy.name"></h3>
+
+        <p class="menu-tags">
+          <span class="spice level-3">🌶️🌶️🌶️</span>
+          <span class="veg" data-i18n="menu.veg"></span>
+        </p>
+
+        <p data-i18n="menu.rice.padKapraoCrispy.desc"></p>
+
+        <div class="price-row">
+    <span class="price">4000 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.rice.padKaprao.egg"></span>
+    <span class="price">+700 <span data-i18n="currency"></span></span>
+  </div>
+      </div>
+
+
+      
+    </div>
+
+
+    <!-- C7 Pad Pak Ruam Mit -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="padpakruammit.jfif" alt="Pad Pak Ruam Mit">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.rice.padPakRuamMit.name"></h3>
+
+        <span class="veg" data-i18n="menu.veg"></span>
+
+        <p data-i18n="menu.rice.padPakRuamMit.desc"></p>
+
+        <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4000 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+   <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price3"></span>
+    <span class="price">5000 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= CURRIES ================= -->
+<section class="menu-category" id="curries">
+
+  <div class="menu-category-title">
+    <h2 data-i18n="menu.curries.title"></h2>
+  </div>
+
+  <div class="menu-featured-container">
+
+    <!-- D1 Red Curry -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="redcurry.jfif" alt="Red Curry">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.curries.redCurry.name"></h3>
+        <p><strong data-i18n="menu.curries.redCurry.thai"></strong></p>
+
+        <p class="menu-tags">
+          <span class="spice level-2">🌶️🌶️</span>
+          <span class="veg" data-i18n="menu.veg"></span>
+        </p>
+
+        <p data-i18n="menu.curries.redCurry.desc"></p>
+
+        <p data-i18n="menu.curries.redCurry.price1"></p>
+        <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4200 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+      </div>
+
+    </div>
+
+
+    <!-- D2 Yellow Curry -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="yellowcurry.jfif" alt="Yellow Curry" class="menu-img-rotate">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.curries.yellowCurry.name"></h3>
+        <p><strong data-i18n="menu.curries.yellowCurry.thai"></strong></p>
+
+        <p class="menu-tags">
+          <span class="spice level-1">🌶️</span>
+          <span class="veg" data-i18n="menu.veg"></span>
+        </p>
+
+        <p data-i18n="menu.curries.yellowCurry.desc"></p>
+
+        <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4200 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+      
+      </div>
+
+    </div>
+
+
+    <!-- D3 Green Curry -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="greencurry.jfif" alt="Green Curry">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.curries.greenCurry.name"></h3>
+        <p><strong data-i18n="menu.curries.greenCurry.thai"></strong></p>
+
+        <p class="menu-tags">
+          <span class="spice level-2">🌶️🌶️</span>
+          <span class="veg" data-i18n="menu.veg"></span>
+        </p>
+
+        <p data-i18n="menu.curries.greenCurry.desc"></p>
+
+        <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4200 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+      </div>
+
+    </div>
+
+
+    <!-- D4 Massaman Curry -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="massaman.jfif" alt="Massaman Curry">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.curries.massaman.name"></h3>
+        <p><strong data-i18n="menu.curries.massaman.thai"></strong></p>
+
+        <p class="menu-tags">
+          <span class="spice level-1">🌶️</span>
+          <span class="veg" data-i18n="menu.veg"></span>
+        </p>
+
+        <p data-i18n="menu.curries.massaman.desc"></p>
+
+        <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4200 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+      </div>
+
+    </div>
+
+
+    <!-- D5 Panang Curry -->
+    <div class="menu-item">
+
+
+      <div class="menu-item-image">
+        <img src="panang.jpg" alt="Massaman Curry">
+      </div>
+
+      <div class="menu-item-content">
+        <h3 data-i18n="menu.curries.panang.name"></h3>
+        <p><strong data-i18n="menu.curries.panang.thai"></strong></p>
+
+        <p class="menu-tags">
+          <span class="spice level-2">🌶️🌶️</span>
+          <span class="veg" data-i18n="menu.veg"></span>
+        </p>
+
+        <p data-i18n="menu.curries.panang.desc"></p>
+
+        <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price1"></span>
+    <span class="price">4200 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.sukee.price2"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= THAI SPECIALITIES ================= -->
+<section class="menu-category" id="specialities">
+
+  <div class="menu-category-title">
+    <h2 data-i18n="menu.specialities.title"></h2>
+  </div>
+
+  <div class="menu-featured-container">
+
+    <!-- E1 Larb -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="larb.jfif" alt="Larb">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.specialities.larb.name"></h3>
+        <p><strong data-i18n="menu.specialities.larb.thai"></strong></p>
+
+        <p class="menu-tags">
+          <span class="spice level-3">🌶️🌶️🌶️</span>
+        </p>
+
+        <p data-i18n="menu.specialities.larb.desc"></p>
+
+        <div class="price-row">
+          <span data-i18n="menu.noodles.padThai.price1"></span>
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+
+    <!-- E2 Kah Moo Yang -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="khamooyang.jfif" alt="Kah Moo Yang">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.specialities.kahMooYang.name"></h3>
+        <p><strong data-i18n="menu.specialities.kahMooYang.thai"></strong></p>
+
+        <p data-i18n="menu.specialities.kahMooYang.desc"></p>
+
+        <div class="price-row">
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+
+    <!-- E3 Khao Kai Yang -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="khaokaiyang.jfif" alt="Kah Moo Yang">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.specialities.khaoKaiYang.name"></h3>
+        <p><strong data-i18n="menu.specialities.khaoKaiYang.thai"></strong></p>
+
+        <p data-i18n="menu.specialities.khaoKaiYang.desc"></p>
+
+        <div class="price-row">
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+
+    <!-- E4 Luk Chin -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="lukchin.jfif" alt="Luk Chin">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.specialities.lukChin.name"></h3>
+        <p><strong data-i18n="menu.specialities.lukChin.thai"></strong></p>
+
+        <p data-i18n="menu.specialities.lukChin.desc"></p>
+
+        <div class="price-row">
+    <span class="price">4500 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+
+    <!-- E5 Som Tum -->
+    <div class="menu-item">
+
+
+      <div class="menu-item-image">
+        <img src="somtum.jfif" alt="Som Tum" class="menu-img-full">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.specialities.somTum.name"></h3>
+        <p><strong data-i18n="menu.specialities.somTum.thai"></strong></p>
+
+        <p class="menu-tags">
+          <span class="spice level-3">🌶️🌶️🌶️</span>
+        </p>
+
+        <p data-i18n="menu.specialities.somTum.desc"></p>
+
+        <div class="price-row">
+    <span class="price">5000 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+
+    <!-- E6 Tum Pah -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="tumpah.jfif" alt="Tum Pah">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.specialities.tumPah.name"></h3>
+        <p><strong data-i18n="menu.specialities.tumPah.thai"></strong></p>
+
+        <p class="menu-tags">
+          <span class="spice level-3">🌶️🌶️🌶️</span>
+          <span class="veg" data-i18n="menu.veg"></span>
+        </p>
+
+        <p data-i18n="menu.specialities.tumPah.desc"></p>
+
+        <div class="price-row">
+    <span class="price">5000 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+
+    <!-- E7 Yum -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="yum.jfif" alt="Yum">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.specialities.yum.name"></h3>
+        <p><strong data-i18n="menu.specialities.yum.thai"></strong></p>
+
+        <p class="menu-tags">
+          <span class="spice level-3">🌶️🌶️🌶️</span>
+          <span class="veg" data-i18n="menu.veg"></span>
+        </p>
+
+        <p data-i18n="menu.specialities.yum.desc"></p>
+
+        <div class="price-row">
+    <span data-i18n="menu.soups.kuaitiaoTomYum.price1"></span>
+    <span class="price">5000 <span data-i18n="currency"></span></span>
+  </div>
+
+  <div class="price-row">
+    <span data-i18n="menu.soups.kuaitiaoTomYum.price2"></span>
+    <span class="price">6000 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+
+    <!-- E8 Som Tum Tad -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="tumtad.jfif" alt="Tum Tad">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.specialities.somTumTad.name"></h3>
+        <p><strong data-i18n="menu.specialities.somTumTad.thai"></strong></p>
+
+        <p data-i18n="menu.specialities.somTumTad.desc"></p>
+
+        <div class="price-row">
+    <span class="price">15000 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="menu-category" id="fish">
+
+  <div class="menu-category-title">
+    <h2 data-i18n="menu.fish.title"></h2>
+    <p class="menu-note text-white" data-i18n="menu.fish.note" ></p>
+  </div>
+
+  <div class="menu-featured-container">
+
+    <!-- Fish 1 -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="fishsweetchili.jfif" alt="Deep Fried Tilapia Sweet Chili">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.fish.sweetChili.name"></h3>
+
+        <p>
+          <strong data-i18n="menu.fish.sweetChili.thai"></strong>
+        </p>
+
+        <p data-i18n="menu.fish.sweetChili.desc"></p>
+<div class="price-row">
+    <span class="price">8500 <span data-i18n="currency"></span></span>
+  </div>
+      </div>
+
+    </div>
+
+
+    <!-- Fish 2 -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="lemonfish.jfif" alt="Fish Lime" class="menu-img-full">
+      </div>
+
+    
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.fish.lime.name"></h3>
+
+        <p>
+          <strong data-i18n="menu.fish.lime.thai"></strong>
+        </p>
+
+        <p data-i18n="menu.fish.lime.desc"></p>
+<div class="price-row">
+    <span class="price">8500 <span data-i18n="currency"></span></span>
+  </div>
+      </div>
+
+    </div>
+
+
+    <!-- Fish 3 -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="fishsweetsour.jfif" alt="Deep Fried Tilapia Sweet Sour">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.fish.sweetSour.name"></h3>
+
+        <p>
+          <strong data-i18n="menu.fish.sweetSour.thai"></strong>
+        </p>
+
+        <p data-i18n="menu.fish.sweetSour.desc"></p>
+<div class="price-row">
+    <span class="price">8500 <span data-i18n="currency"></span></span>
+  </div>
+      </div>
+
+    </div>
+
+
+    <!-- Fish 4 -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="garlicfish.jfif" alt="Deep Fried Tilapia Garlic" class="menu-img-full">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.fish.garlic.name"></h3>
+
+        <p>
+          <strong data-i18n="menu.fish.garlic.thai"></strong>
+        </p>
+
+        <p data-i18n="menu.fish.garlic.desc"></p>
+<div class="price-row">
+    <span class="price">8500 <span data-i18n="currency"></span></span>
+  </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<!-- ================= SIDE DISHES & GARNISHES ================= -->
+<section class="menu-category" id="sides">
+
+  <div class="menu-category-title">
+    <h2 data-i18n="menu.sides.title"></h2>
+  </div>
+
+  <div class="menu-featured-container">
+
+    <!-- Steamed Jasmine Rice -->
+    <div class="menu-item">
+
+      
+      <div class="menu-item-image">
+        <img src="rice.jfif" alt="StickyRice">
+      </div>
+      
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.sides.jasmineRice.name"></h3>
+
+        <p data-i18n="menu.sides.jasmineRice.desc"></p>
+
+        <div class="price-row">
+    <span class="price">1000 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+
+    <!-- Sticky Rice -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="stickyrice.jfif" alt="StickyRice" class="menu-img-full">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.sides.stickyRice.name"></h3>
+
+        <p data-i18n="menu.sides.stickyRice.desc"></p>
+
+        <div class="price-row">
+    <span class="price">1000 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+
+    <!-- Fried Egg -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="egg.jfif" alt="Egg" class="menu-img-full">
+      </div>
+      
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.sides.friedEgg.name"></h3>
+
+        <p data-i18n="menu.sides.friedEgg.desc"></p>
+
+        <div class="price-row">
+    <span class="price">700 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+
+    <!-- Plain Rice Noodles -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="ricenoodles.jfif" alt="" >
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.sides.riceNoodles.name"></h3>
+
+        <p data-i18n="menu.sides.riceNoodles.desc"></p>
+
+       <div class="price-row">
+    <span class="price">1000 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="menu-category" id="desserts">
+
+  <div class="menu-category-title">
+    <h2 data-i18n="menu.desserts.title"></h2>
+  </div>
+
+  <div class="menu-featured-container">
+
+    <!-- Sticky Rice with Mango -->
+    <div class="menu-item">
+
+       <div class="menu-item-image">
+        <img src="mangostickyrice.jfif" alt="Mango Sticky Rice" class="menu-img-full">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.desserts.mangoStickyRice.name"></h3>
+
+        <p data-i18n="menu.desserts.mangoStickyRice.desc"></p>
+
+        <div class="price-row">
+    <span class="price">2500 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+
+    <!-- Thai Crepe -->
+    <div class="menu-item">
+
+       <div class="menu-item-image">
+        <img src="crepe.jfif" alt="Crepe" class="menu-img-full">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.desserts.thaiCrepe.name"></h3>
+
+        <p data-i18n="menu.desserts.thaiCrepe.desc"></p>
+
+         <div class="price-row">
+    <span class="price">3000 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= SPECIAL DRINKS ================= -->
+<section class="menu-category" id="drinks">
+
+  <div class="menu-category-title">
+    <h2 data-i18n="menu.drinks.title"></h2>
+  </div>
+  
+  <div class="menu-featured-container">
+    
+    <!-- Thai Tea -->
+    <div class="menu-item">
+
+      
+    <div class="menu-item-image">
+        <img src="thaitea.jfif" alt="Thai Tea" class="menu-img-full">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.drinks.thaiTea.name"></h3>
+
+        <p data-i18n="menu.drinks.thaiTea.desc"></p>
+
+         <div class="price-row">
+    <span class="price">2500 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+
+    <!-- Thai Green Tea -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="greentea.jfif" alt="Green Tea" class="menu-img-full">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.drinks.thaiGreenTea.name"></h3>
+
+        <p data-i18n="menu.drinks.thaiGreenTea.desc"></p>
+
+         <div class="price-row">
+    <span class="price">2500 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+
+<!-- Chang Beer -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="chang.png" alt="Green Tea" class="menu-img-full">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.drinks.chang.name"></h3>
+
+        <p data-i18n="menu.drinks.chang.desc"></p>
+
+         <div class="price-row">
+    <span class="price">1850 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+
+
+    <!-- Singha Beer -->
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="singha.png" alt="Green Tea" class="menu-img-full">
+      </div>
+
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.drinks.singha.name"></h3>
+
+        <p data-i18n="menu.drinks.singha.desc"></p>
+
+         <div class="price-row">
+    <span class="price">1850 <span data-i18n="currency"></span></span>
+  </div>
+
+      </div>
+    </div>
+<!--
+  
+    <div class="menu-item">
+
+      <div class="menu-item-image">
+        <img src="coffee.jfif" alt="Iced Coffee" class="menu-img-full">
+      </div>
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.drinks.thaiIcedCoffee.name"></h3>
+
+        <p data-i18n="menu.drinks.thaiIcedCoffee.desc"></p>
+
+        <p data-i18n="menu.drinks.thaiIcedCoffee.price"></p>
+
+        <p class="unavailable" data-i18n="menu.unavailable"></p>
+
+      </div>
+    </div>
+
+
+    
+    <div class="menu-item">
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.drinks.thaiBlackCoffee.name"></h3>
+
+        <p data-i18n="menu.drinks.thaiBlackCoffee.desc"></p>
+
+        <p data-i18n="menu.drinks.thaiBlackCoffee.price"></p>
+
+        <p class="unavailable" data-i18n="menu.unavailable"></p>
+
+      </div>
+    </div>
+
+
+    
+    <div class="menu-item">
+      <div class="menu-item-content">
+
+        <h3 data-i18n="menu.drinks.pinkMilk.name"></h3>
+
+        <p data-i18n="menu.drinks.pinkMilk.desc"></p>
+
+        <p data-i18n="menu.drinks.pinkMilk.price"></p>
+
+        <p class="unavailable" data-i18n="menu.unavailable"></p>
+
+      </div>
+    </div>
+    -->
+  </div>
+
+</section>
+<!-- =================================================== -->
+
+<!-- ============================================================ -->
+
+<section class="menu-return">
+
+  <div class="menu-return-content">
+
+    <h2 data-i18n="menu.backIntro"></h2>
+
+    <a href="index.html#menusection" class="menu-icon-link">
+      <i class="bi bi-arrow-left icon-outline text-white"></i>
+      <i class="bi bi-arrow-left icon-filled text-white"></i>
+    </a>
+
+  </div>
+
+</section>
+
+
+ <footer class="site-footer" id="contact">
+
+  <div class="footer-container">
+    
+
+    <div class="footer-column">
+     
+      <h4 data-i18n="footer.title"></h4>
+      <p data-i18n="footer.subtitle"></p>
+    </div>
+
+    <div class="footer-column">
+      <h4 data-i18n="footer.locations"></h4>
+      <ul>
+        <li>Rim Thanonh 1: Budapest, Dob u. 60, 1074</li>
+        <li>Rim Thanonh 2: Budapest, Akácfa u. 40, 1072</li>
+        <li>Rim Thanonh 4: Budapest, Klauzál u. 35, 1072</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4 data-i18n="footer.hours"></h4>
+      <ul>
+        <li><span data-i18n="restaurants.labels.days"></span></li>
+        <li>R1: 11:00 – 22:00</li>
+        <li>R2: 11:00 – 22:00</li>
+        <li>R4: 11:00 – 22:00</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+     <h4 data-i18n="footer.contact"></h4>
+      <ul>        
+        <li><strong data-i18n="restaurants.labels.phone"></strong><br> R1: 06 1 617 7147<br>R2: 06 70 614 6517<br>R4: 06 70 723 1899</li>
+        <li>Email: info@rimthanonh.hu</li>
+      </ul>
+    </div>
+
+  </div>
+
+<!-- FOOTER SOCIAL + LEGAL -->
+<div class="footer-extra">
+
+  <!-- Social Icons -->
+  <div class="footer-social">
+    <a href="https://www.facebook.com/p/Rim-Thanonh-Thai-Food-100075905570746/?locale=hu_HU" target="_blank">
+      <i class="bi bi-facebook"></i>
+    </a>
+
+    <a href="https://www.instagram.com/rimthanonhthaifood111/" target="_blank">
+      <i class="bi bi-instagram"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@rim.thanonh.thai" target="_blank">
+      <i class="bi bi-tiktok"></i>
+    </a>
+  </div>
+
+  <!-- Terms Link -->
+<div class="footer-legal">
+<a href="terms.html" data-i18n="footer.terms"></a>
+<span> | </span>
+<a href="privacy.html" data-i18n="legal.privacyPolicy"></a>
+</div>
+
+</div>
+
+  <div class="footer-bottom">
+    <p data-i18n="footer.copyright"></p>
+  </div>
+
+</footer>
+    <script src="rim.js"></script>
+</body>
+</html>
