@@ -37,7 +37,7 @@ function saveBookings() {
 const bookings = loadBookings();
 
 /* ================================
-   EMAIL SETUP
+   EMAIL
 ================================ */
 
 const transporter = nodemailer.createTransport({
@@ -49,29 +49,34 @@ const transporter = nodemailer.createTransport({
 });
 
 /* ================================
-   RATE LIMIT (SAFE)
+   RATE LIMIT
 ================================ */
 
 const bookingLimiter = rateLimit({
   windowMs: 5 * 60 * 1000,
-  max: 10,
-  message: "Too many requests. Please try again later."
+  max: 10
 });
 
 /* ================================
    RESTAURANTS
 ================================ */
 
-const emails = {
-  "1": "rimthanonh1@gmail.com",
-  "2": "rimthanonh1@gmail.com",
-  "3": "rimthanonh1@gmail.com"
-};
-
-const restaurantNames = {
-  "1": "Rim Thanonh 1",
-  "2": "Rim Thanonh 2",
-  "3": "Rim Thanonh 4"
+const restaurantInfo = {
+  "1": {
+    name: "Rim Thanonh 1",
+    address: "Budapest, Dob u. 60, 1074",
+    email: "rimthanonh1@gmail.com"
+  },
+  "2": {
+    name: "Rim Thanonh 2",
+    address: "Budapest, Akácfa u. 40, 1072",
+    email: "rimthanonh1@gmail.com"
+  },
+  "3": {
+    name: "Rim Thanonh Thai Tea & Snacks",
+    address: "Budapest, Klauzál u. 35, 1072",
+    email: "rimthanonh1@gmail.com"
+  }
 };
 
 /* ================================
@@ -95,7 +100,7 @@ function normalizeTime(timeStr) {
 
 app.post("/book", bookingLimiter, async (req, res) => {
 
-  if (req.body.website) return res.sendStatus(400); // bot trap
+  if (req.body.website) return res.sendStatus(400);
 
   const { name, phone, email, guests, restaurant, date, time, message } = req.body;
 
@@ -109,9 +114,9 @@ app.post("/book", bookingLimiter, async (req, res) => {
   }
 
   const safeTime = normalizeTime(time);
-  const targetEmail = emails[restaurant];
+  const restaurantData = restaurantInfo[restaurant];
 
-  if (!targetEmail) {
+  if (!restaurantData) {
     return res.status(400).send("Invalid restaurant");
   }
 
@@ -132,7 +137,7 @@ app.post("/book", bookingLimiter, async (req, res) => {
   try {
 
     await transporter.sendMail({
-      to: targetEmail,
+      to: restaurantData.email,
       subject: "New Reservation",
       html: `
         <h2>New Booking</h2>
@@ -141,22 +146,22 @@ app.post("/book", bookingLimiter, async (req, res) => {
         <p><b>Phone:</b> ${phone}</p>
         <p><b>Email:</b> ${email}</p>
         <p><b>Guests:</b> ${guestsNum}</p>
-        <p><b>Restaurant:</b> ${restaurantNames[restaurant]}</p>
+        <p><b>Restaurant:</b> ${restaurantData.name}</p>
         <p><b>Date:</b> ${date}</p>
         <p><b>Time:</b> ${safeTime}</p>
         <p><b>Message:</b> ${message || "None"}</p>
 
         <br>
 
-        <a href="https://rim-thanonh.onrender.com/accept?id=${bookingId}"
-        style="background:#28a745;color:white;padding:12px 20px;text-decoration:none;border-radius:6px;">
+        <a href="https://rimthanonh.hu/accept?id=${bookingId}"
+        style="display:inline-block;background:#28a745;color:white;padding:12px 20px;text-decoration:none;border-radius:6px;font-weight:bold;">
         ✅ Accept Booking
         </a>
 
-        <br><br>
+        <div style="height:10px;"></div>
 
-        <a href="https://rim-thanonh.onrender.com/reject?id=${bookingId}"
-        style="background:#dc3545;color:white;padding:12px 20px;text-decoration:none;border-radius:6px;">
+        <a href="https://rimthanonh.hu/reject?id=${bookingId}"
+        style="display:inline-block;background:#dc3545;color:white;padding:12px 20px;text-decoration:none;border-radius:6px;font-weight:bold;">
         ❌ Reject Booking
         </a>
       `
@@ -189,36 +194,38 @@ app.get("/accept", async (req, res) => {
   booking.status = "accepted";
   saveBookings();
 
+  const restaurant = restaurantInfo[booking.restaurant];
+
   try {
     await transporter.sendMail({
       to: booking.email,
       subject: "Reservation Confirmed",
       html: `
-  <p>Dear ${booking.name},</p>
+        <p>Dear ${booking.name},</p>
 
-  <p>We are delighted to confirm your reservation.</p>
+        <p>We are delighted to confirm your reservation.</p>
 
-  <h3>Reservation Details:</h3>
-  <p><strong>Restaurant:</strong> ${restaurant.name}</p>
-  <p><strong>Address:</strong> ${restaurant.address}</p>
-  <p><strong>Date:</strong> ${booking.date}</p>
-  <p><strong>Time:</strong> ${booking.time}</p>
-  <p><strong>Guests:</strong> ${booking.guests}</p>
+        <h3>Reservation Details:</h3>
+        <p><strong>Restaurant:</strong> ${restaurant.name}</p>
+        <p><strong>Address:</strong> ${restaurant.address}</p>
+        <p><strong>Date:</strong> ${booking.date}</p>
+        <p><strong>Time:</strong> ${booking.time}</p>
+        <p><strong>Guests:</strong> ${booking.guests}</p>
 
-  <br>
+        <br>
 
-  <p>We look forward to welcoming you and wish you a wonderful dining experience.</p>
+        <p>We look forward to welcoming you.</p>
 
-  <br>
+        <br>
 
-  <p>Best regards,<br>
-  Rim Thanonh Thai Food</p>
-`
+        <p>Best regards,<br>Rim Thanonh Thai Food</p>
+      `
     });
 
     res.send("✅ Booking Accepted");
 
-  } catch {
+  } catch (err) {
+    console.error(err);
     res.status(500).send("Email failed");
   }
 
@@ -245,28 +252,28 @@ app.get("/reject", async (req, res) => {
       to: booking.email,
       subject: "Reservation Update",
       html: `
-  <p>Dear ${booking.name},</p>
+        <p>Dear ${booking.name},</p>
 
-  <p>Thank you for your reservation request.</p>
+        <p>Thank you for your reservation request.</p>
 
-  <p>Unfortunately, we are unable to confirm your booking at the requested time.</p>
+        <p>Unfortunately, we are unable to confirm your booking at this time.</p>
 
-  <p>We kindly ask you to try another date or time.</p>
+        <p>Please try another date or time.</p>
 
-  <br>
+        <br>
 
-  <p>We apologize for the inconvenience and hope to welcome you soon.</p>
+        <p>We apologize for the inconvenience.</p>
 
-  <br>
+        <br>
 
-  <p>Best regards,<br>
-  Rim Thanonh Thai Food</p>
-`
+        <p>Best regards,<br>Rim Thanonh Thai Food</p>
+      `
     });
 
     res.send("❌ Booking Rejected");
 
-  } catch {
+  } catch (err) {
+    console.error(err);
     res.status(500).send("Email failed");
   }
 
